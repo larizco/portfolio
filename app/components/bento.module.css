@@ -1,0 +1,58 @@
+.bentoGrid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 0.3fr 1fr;
+  grid-template-areas: 
+    'about about projects updates'
+    'menu menu menu updates'
+    'contact skills skills updates';
+  height: 100vh;
+  padding: 50px;
+}
+
+.bentoItem {
+  background: #d8eef1;
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  padding: 30px
+}
+
+.about {
+  grid-area: about;
+}
+
+.projects {
+  grid-area: projects;
+}
+
+.menu {
+  grid-area: menu;
+}
+
+.contact {
+  grid-area: contact;
+}
+
+.skills {
+  grid-area: skills;
+}
+
+.updates {
+  grid-area: updates;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 5fr;
+  grid-template-areas: 
+    'stories'
+    'experiences';
+}
+
+.stories {
+  grid-area: stories;
+}
+
+.experiences {
+  grid-area: experiences;
+}
